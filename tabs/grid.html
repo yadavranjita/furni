@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            display: grid;
+            place-items: center;
+            height: 100vh; /* Adjust the height as needed */
+        }
+
+        .background-image {
+            width: 100%; /* Adjust the width as needed */
+            height: 100%; /* Adjust the height as needed */
+        }
+
+        .center-image {
+            max-width: 80px; /* Adjust the size of the centered image */
+            max-height: 80px; /* Adjust the size of the centered image */
+        }
+    </style>
+    <title>Center Image on Image with CSS Grid</title>
+</head>
+<body>
+    <div class="grid-container">
+        <img src="../images/img-grid-1.jpg" alt="Background Image" class="background-image">
+        <img src="../images/img-grid-3.jpg" alt="Center Image" class="center-image">
+    </div>
+</body>
+</html>

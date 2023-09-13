@@ -20,62 +20,79 @@
             top: 8px;
             left: 0px;
         }
-        a{
-            color: black;
-            text-decoration: none;
+        .container-help{
+            position: relative;
         }
-        a:hover{
-            color: black;
-            opacity: 0.4;
+        .container-help-right{
+            position: absolute;
+            top: 230px;
+            left: 290px;
         }
-        /* .p-3 a{
+        .nav-link{
             color: white;
             opacity: 0.4;
         }
-        .p-3 a:hover{
-            color: white;
-            opacity: 1;
+        .nav-tabs .nav-link:hover {
+            color: white; 
+            opacity: 1;/* Change the color to your desired hover color */
             border-bottom: 5px solid yellow;
-            padding-bottom: 4px;
-        } */
+            border-left-color: #28a745;
+            border-right-color: #28a745;
+            border-top-color: #28a745;
+            /* border: red; Add a border-bottom and set its color */
+        }
+        .nav-tabs {
+            border: none; /* Remove the border */
+        }
+        .nav-tabs {
+            border: none; /* Remove the border */
+        }
         
+        /* Custom CSS to remove the border around the individual tab panes */
+        .tab-content {
+            border: none; /* Remove the border */
+        }
+        .nav-tabs .nav-link:focus {
+            outline: none; /* Remove the focus outline */
+        }
+      
     </style>
 </head>
 <body>
-    <!-- <p id="goToTop">Go To Top</p> -->
+    <p id="goToTop"></p>
     <ul class="nav nav-tabs bg-success" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link text-white" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Furni.</a>
+        <li class="nav-item ms-5 ps-5" style="width: 600px; height: 50px;">
+            <a class="nav-link text-white opacity-100" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"><h1>Furni.</h1></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Home</a>
+            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Shop</a>
+            <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Shop</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">About us</a>
+            <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">About us</a>
         </li>
         <li class="nav-item"> 
-            <a class="nav-link text-white" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">Services</a>
+            <a class="nav-link" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">Services</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">Blog</a>
+            <a class="nav-link" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">Blog</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab" aria-controls="tab7" aria-selected="false">Contact us</a>
+            <a class="nav-link" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab" aria-controls="tab7" aria-selected="false">Contact us</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" id="tab8-tab" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8" aria-selected="false"><i class="fa-solid fa-user"></i></a>
+            <a class="nav-link text-white opacity-100" id="tab8-tab" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8" aria-selected="false"><i class="fa-solid fa-user"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" id="tab9-tab" data-toggle="tab" href="#tab9" role="tab" aria-controls="tab9" aria-selected="false"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="nav-link text-white opacity-100" id="tab9-tab" data-toggle="tab" href="#tab9" role="tab" aria-controls="tab9" aria-selected="false"><i class="fa-solid fa-cart-shopping"></i></a>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active bg-success" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-            <div class="d-flex justify-content-between tb1 bg-success" style="height: 503px;">
-                <div class="tb2 m-5 p-5">
+        <div class="tab-pane fade show active " id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+            <div class="d-flex justify-content-between tb1 bg-success" style="height: 450px;">
+                <div class="tb2 ms-5 me-5 p-5">
                     <h1>Modern Interior <br> Design Studio</h1><br>
                     <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet <br>
                         velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p><br>
@@ -85,12 +102,12 @@
                     </div>
                 </div>
                 <div class="tb4">
-                    <img src="images/couch.png" alt="image">
+                    <img src="images/couch.png" alt="image" style="width: 700px;">
                 </div>
             </div>
             <div class="tb5 bg-white">
                 <div class="d-flex justify-content-between tb7 m-5 p-5">
-                    <div class="tb6 border" style="width: 300px;">
+                    <div class="tb6" style="width: 300px;">
                         <h1>Crafted with <br> excellent <br> material.</h1>
                         <p>Donec vitae odio quis nisl dapibus <br>
                             malesuada. Nullam ac aliquet velit. <br>
@@ -98,17 +115,17 @@
                             tempor tristique.</p>
                         <button type="button" class="btn btn-dark"><a href="#goToTop" class="text-white">Explore</a></button>
                     </div>
-                    <div class="tb7 border text-center" style="width: 260px;">
+                    <div class="tb7 text-center" style="width: 260px;">
                         <img src="images/product-1 (1).png" alt="image" style="height: 250px;width: 250px;">
                         <p>Nordic Chair</p>
                         <p>$50.00</p>
                     </div>
-                    <div class="tb8 border text-center" style="width: 260px;">
+                    <div class="tb8 text-center" style="width: 260px;">
                         <img src="images/product-2 (1).png" alt="image" style="height: 250px;width: 250px;">
                         <p>Kruzo Aero Chair</p>
                         <p>$78.00</p>
                     </div>
-                    <div class="tb9 border text-center" style="width: 260px;">
+                    <div class="tb9 text-center" style="width: 260px;">
                         <img src="images/product-3.png" alt="image" style="height: 250px;width: 250px;">
                         <p>Ergonomic Chair</p>
                         <p>$43.00</p>
@@ -171,7 +188,7 @@
             <div class="blueDots bg-white" style="height: 50px;">
                 <div class="blueDots1 bg-white">
                     <div class="blueDots3 d-flex justify-content-between">
-                        <img src="images/bluedots.png" alt="image" style="height: 200px; width: 200px;">
+                        <img src="images/bluedots.png" alt="image" style="height: 300px; width: 300px;">
                         <p>aa</p>
                     </div>
                 </div>
@@ -179,43 +196,1773 @@
             <div class="help bg-white">
                 <div class="help1 bg-white">
                     <div class="help2 d-flex justify-content-between m-5 p-5 bg-white">
-                        <p></p>
-                        <p></p>
+                        <div class="container-help" style="height: 600px;">
+                            <img src="images/img-grid-1.jpg" alt="image" style="width: 400px; height: 500px;">
+                            <div class="container-help-right"><img src="images/img-grid-3.jpg" alt="image" style="width: 330px; height: 400px;"></div>
+                        </div>
+                        <img src="images/img-grid-2.jpg" alt="image" style="width: 180px; height: 200px;">
+                        <div class="help3">
+                            <h1>We Help You Make Modern <br> Interior Design</h1>
+                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae <br>
+                                odio quis nisl dapibus malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate velit imperdiet dolor tempor tristique. <br>
+                                Pellentesque habitant morbi tristique senectus et netus et <br>
+                                malesuada</p>
+                            <div class="help4 d-flex justify-content-between">
+                                <div class="help5">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                                <div class="help6">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="help7 d-flex justify-content-between">
+                                <div class="help8">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                                <div class="help9">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-dark">Explore</button>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <!-- <div class="oneImage1" style="height: 0px;">
+                <div class="d-flex justify-content-between" >
+                    <p style="width: 300px;"></p>
+                    <img src="images/img-grid-3.jpg" alt="image" style="width: 400px;">
+                    <p style="width: 800px;"></p>
+                </div>
+            </div> -->
+            <div class="readMore bg-white">
+                <div class="readMore1 d-flex justify-content-between m-5 p-5 bg-white" >
+                    <div class="readMore2">
+                        <div class="readMore5 d-flex justify-content-between">
+                            <img src="images/product-1.png" alt="image" style="height: 100px; width: 100px;">
+                            <div class="readMore8">
+                                <h5>Nordic Chair</h5>
+                                <p>Donec facilisis quam ut purus <br> rutrum lobortis. Donec vitae odio</p>
+                                <a href="#goToTop">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="readMore3">
+                        <div class="readMore6 d-flex justify-content-between">
+                            <img src="images/product-2.png" alt="image" style="height: 100px; width: 100px;">
+                            <div class="readMore9">
+                                <h6>Kruzo Aero Chair</h6>
+                                <p>Donec facilisis quam ut purus <br> rutrum lobortis. Donec vitae odio</p>
+                                <a href="#goToTop">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="readMore4">
+                        <div class="readMore7 d-flex justify-content-between">
+                            <img src="images/product-3.png" alt="image" style="height: 100px; width: 100px;">
+                            <div class="readMore10">
+                                <h6>Ergonomic Chair</h6>
+                                <p>Donec facilisis quam ut purus <br> rutrum lobortis. Donec vitae odio</p>
+                                <a href="#goToTop">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner bg-success" style="height: 500px;">
+                    <div class="carousel-item active" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="recentBlog bg-white">
+                <div class="recentBlog6 m-5 p-5">
+                    <div class="recentBlog1 d-flex justify-content-between">
+                        <h2>Recent Blog</h2><br><br><br>
+                        <a href="#goToTop">View All Posts</a>
+                    </div>
+                    <div class="recentBlog2 d-flex justify-content-between">
+                        <div class="recentBlog3">
+                            <img src="images/post-1.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>First Time Home Owner Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 19, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog4">
+                            <img src="images/post-2.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>How To Keep Your Furniture Clean</h6>
+                            <p>by <strong>Robert Fox</strong> on <strong>Dec 15, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog5">
+                            <img src="images/post-3.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>Small Space Furniture Apartment Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 12, 2021</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+            <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+                <hr><br>
+                <div class=" footer1 d-flex justify-content-between">
+                    <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                        Distributed By ThemeWagon</p>
+                    <ul class="d-flex justify-content-between">
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-            <h2>Content for Tab 2</h2>
-            <p>This is the content for Tab 2.</p>
+            <!-- <h2>Content for Tab 2</h2>
+            <p>This is the content for Tab 2.</p> -->
+            <div class="d-flex justify-content-between tb1 bg-success" style="height: 550px;">
+                <div class="tb2 m-5 p-5">
+                    <h1>Modern Interior <br> Design Studio</h1><br>
+                    <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet <br>
+                        velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p><br>
+                    <div class="d-flex justify-content-between tb3" style="width: 200px;">
+                        <button type="button" class="btn btn-warning"><a href="#goToTop">Shop Now</a></button>
+                        <button type="button" class="btn btn-outline-light"><a href="#goToTop">Explore</a></button>
+                    </div>
+                </div>
+                <div class="tb4">
+                    <img src="images/couch.png" alt="image" style="width: 700px;">
+                </div>
+            </div>
+            <div class="tb5 bg-white">
+                <div class="d-flex justify-content-between tb7 m-5 p-5">
+                    <div class="tb6" style="width: 300px;">
+                        <h1>Crafted with <br> excellent <br> material.</h1>
+                        <p>Donec vitae odio quis nisl dapibus <br>
+                            malesuada. Nullam ac aliquet velit. <br>
+                            Aliquam vulputate velit imperdiet dolor <br>
+                            tempor tristique.</p>
+                        <button type="button" class="btn btn-dark"><a href="#goToTop" class="text-white">Explore</a></button>
+                    </div>
+                    <div class="tb7 text-center" style="width: 260px;">
+                        <img src="images/product-1 (1).png" alt="image" style="height: 250px;width: 250px;">
+                        <p>Nordic Chair</p>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="tb8 text-center" style="width: 260px;">
+                        <img src="images/product-2 (1).png" alt="image" style="height: 250px;width: 250px;">
+                        <p>Kruzo Aero Chair</p>
+                        <p>$78.00</p>
+                    </div>
+                    <div class="tb9 text-center" style="width: 260px;">
+                        <img src="images/product-3.png" alt="image" style="height: 250px;width: 250px;">
+                        <p>Ergonomic Chair</p>
+                        <p>$43.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faltu" style="height: 80px;">
+                <div class="faltu2 bg-white">
+                    <div class="faltu1 d-flex justify-content-between m-5 p-5 bg-white">
+                        <p style="width: 500px;"></p>
+                        <img src="images/polka-dot-yellow-on-white-filip-hellman.jpg" alt="image" style="height: 280px; width: 380px;">
+                        <p style="width: 100px;"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="choose1 bg-white">
+                <div class="d-flex justify-content-between choose2 m-5 p-5">
+                    <div class="choose3">
+                        <h1>Why Choose Us</h1>
+                        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam <br>
+                            vulputate velit imperdiet dolor tempor tristique.</p><br>
+                        <div class="choose4 d-flex justify-content-between">
+                            <div class="choose5">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <h6>Fast & Free Shipping</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p><br>
+                            </div>
+                            <div class="choose6">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <h6>Easy to Shop</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p><br>
+                            </div>
+                        </div>
+                        <div class="choose7 d-flex justify-content-between">
+                            <div class="choose8">
+                                <i class="fa-solid fa-life-ring"></i>
+                                <h6>24/7 Support</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p>
+                            </div>
+                            <div class="choose9">
+                                <i class="fa-solid fa-right-left"></i>
+                                <h6>Hassle Free Returns</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose10 border" style="height: 500px; width: 450px;">
+                        <img src="images/why-choose-us-img.jpg" alt="image" style="height: 500px; width: 450px;">
+                    </div>
+                </div>
+            </div>
+            <div class="blueDots bg-white" style="height: 50px;">
+                <div class="blueDots1 bg-white">
+                    <div class="blueDots3 d-flex justify-content-between">
+                        <img src="images/bluedots.png" alt="image" style="height: 300px; width: 300px;">
+                        <p>aa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="help bg-white">
+                <div class="help1 bg-white">
+                    <div class="help2 d-flex justify-content-between m-5 p-5 bg-white">
+                        <!-- <div class="hlp1 container"> -->
+                            <img src="images/img-grid-1.jpg" alt="image" style="width: 430px; height: 500px;">
+                            <!-- <img src="images/img-grid-3.jpg" alt="image" style="width: 100px; height: 100px;"> -->
+                        <!-- </div> -->
+                        <!-- <div class="hlp2 border" style="width: 100px;"> -->
+                            <img src="images/img-grid-2.jpg" alt="image" style="width: 180px; height: 200px;">
+                            <!-- <img src="images/img-grid-3.jpg" alt="image" style="width: 180px; height: 200px;"> -->
+                        <!-- </div> -->
+                        <div class="help3">
+                            <h1>We Help You Make Modern <br> Interior Design</h1>
+                            <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae <br>
+                                odio quis nisl dapibus malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate velit imperdiet dolor tempor tristique. <br>
+                                Pellentesque habitant morbi tristique senectus et netus et <br>
+                                malesuada</p>
+                            <div class="help4 d-flex justify-content-between">
+                                <div class="help5">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                                <div class="help6">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="help7 d-flex justify-content-between">
+                                <div class="help8">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                                <div class="help9">
+                                    <ul>
+                                        <li><p>Donec vitae odio quis <br> nisl dapibus malesuada</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-dark">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="oneImage1" style="height: 0px;">
+                <div class="d-flex justify-content-between" >
+                    <p style="width: 300px;"></p>
+                    <img src="images/img-grid-3.jpg" alt="image" style="width: 400px;">
+                    <p style="width: 800px;"></p>
+                </div>
+            </div> -->
+            <div class="readMore bg-white">
+                <div class="readMore1 d-flex justify-content-between m-5 p-5 bg-white" >
+                    <div class="readMore2">
+                        <div class="readMore5 d-flex justify-content-between">
+                            <img src="images/product-1.png" alt="image" style="height: 100px; width: 100px;">
+                            <div class="readMore8">
+                                <h5>Nordic Chair</h5>
+                                <p>Donec facilisis quam ut purus <br> rutrum lobortis. Donec vitae odio</p>
+                                <a href="#goToTop">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="readMore3">
+                        <div class="readMore6 d-flex justify-content-between">
+                            <img src="images/product-2.png" alt="image" style="height: 100px; width: 100px;">
+                            <div class="readMore9">
+                                <h6>Kruzo Aero Chair</h6>
+                                <p>Donec facilisis quam ut purus <br> rutrum lobortis. Donec vitae odio</p>
+                                <a href="#goToTop">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="readMore4">
+                        <div class="readMore7 d-flex justify-content-between">
+                            <img src="images/product-3.png" alt="image" style="height: 100px; width: 100px;">
+                            <div class="readMore10">
+                                <h6>Ergonomic Chair</h6>
+                                <p>Donec facilisis quam ut purus <br> rutrum lobortis. Donec vitae odio</p>
+                                <a href="#goToTop">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner bg-success" style="height: 500px;">
+                    <div class="carousel-item active" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="recentBlog bg-white">
+                <div class="recentBlog6 m-5 p-5">
+                    <div class="recentBlog1 d-flex justify-content-between">
+                        <h2>Recent Blog</h2><br><br><br>
+                        <a href="#goToTop">View All Posts</a>
+                    </div>
+                    <div class="recentBlog2 d-flex justify-content-between">
+                        <div class="recentBlog3">
+                            <img src="images/post-1.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>First Time Home Owner Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 19, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog4">
+                            <img src="images/post-2.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>How To Keep Your Furniture Clean</h6>
+                            <p>by <strong>Robert Fox</strong> on <strong>Dec 15, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog5">
+                            <img src="images/post-3.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>Small Space Furniture Apartment Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 12, 2021</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+            <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+                <hr><br>
+                <div class=" footer1 d-flex justify-content-between">
+                    <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                        Distributed By ThemeWagon</p>
+                    <ul class="d-flex justify-content-between">
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-            <h2>Content for Tab 3</h2>
-            <p>This is the content for Tab 3.</p>
+            <!-- <h2>Content for Tab 3</h2>
+            <p>This is the content for Tab 3.</p> -->
+            <div class="shop1 bg-success" style="height: 400px;">
+                <div class="shop2 bg-success ms-5 p-5 text-white">
+                    <h1 style=" position: absolute; top: 200px; left: 100px;">Shop</h1>
+                </div>
+            </div>
+            <div class="chair1">
+                <div class="chair2 d-flex justify-content-between m-5 p-5">
+                    <div class="chair3 text-center">
+                        <img src="images/product-3.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Nordic Chair</h6>
+                        <h6><strong>$50.00</strong></h6>
+                    </div>
+                    <div class="chair4 text-center">
+                        <img src="images/product-1.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Nordic Chair</h6>
+                        <h6><strong>$50.00</strong></h6>
+                    </div>
+                    <div class="chair5 text-center">
+                        <img src="images/product-2.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Kruzo Aero Chair</h6>
+                        <h6><strong>$78.00</strong></h6>
+                    </div>
+                    <div class="chair6 text-center">
+                        <img src="images/product-3.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Kruzo Aero Chair</h6>
+                        <h6><strong>$43.00</strong></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="chair1">
+                <div class="chair2 d-flex justify-content-between m-5 p-5">
+                    <div class="chair3 text-center">
+                        <img src="images/product-3.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Nordic Chair</h6>
+                        <h6><strong>$50.00</strong></h6>
+                    </div>
+                    <div class="chair4 text-center">
+                        <img src="images/product-1.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Nordic Chair</h6>
+                        <h6><strong>$50.00</strong></h6>
+                    </div>
+                    <div class="chair5 text-center">
+                        <img src="images/product-2.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Kruzo Aero Chair</h6>
+                        <h6><strong>$78.00</strong></h6>
+                    </div>
+                    <div class="chair6 text-center">
+                        <img src="images/product-3.png" alt="image" style="height: 300px; width: 300px;">
+                        <h6>Kruzo Aero Chair</h6>
+                        <h6><strong>$43.00</strong></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+            <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+                <hr><br>
+                <div class=" footer1 d-flex justify-content-between">
+                    <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                        Distributed By ThemeWagon</p>
+                    <ul class="d-flex justify-content-between">
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
-            <h2>Content for Tab 4</h2>
-            <p>This is the content for Tab 4.</p>
+            <!-- <h2>Content for Tab 4</h2>
+            <p>This is the content for Tab 4.</p> -->
+            <div class="about1 bg-success" style="height: 450px;">
+                <div class="about2 ml-5 p-5 me-0 pe-0">
+                    <div class="about3 d-flex justify-content-between"> 
+                        <div class="about4">
+                            <h1>About Us</h1><br>
+                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet <br> 
+                                velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p><br>
+                            <div class="about5 d-flex justify-content-between" style="width: 200px;">
+                                <button type="button" class="btn btn-warning text-black">Shop Now</button>
+                                <button type="button" class="btn btn-outline-secondary">Explore</button>
+                            </div>
+                        </div>
+                        <img src="images/couch.png" alt="image" style="width: 700px;">
+                    </div>
+                </div>
+            </div>
+            <div class="faltu" style="height: 80px;">
+                <div class="faltu2 bg-white">
+                    <div class="faltu1 d-flex justify-content-between m-5 p-5 bg-white">
+                        <p style="width: 500px;"></p>
+                        <img src="images/polka-dot-yellow-on-white-filip-hellman.jpg" alt="image" style="height: 280px; width: 380px;">
+                        <p style="width: 100px;"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="choose1 bg-white">
+                <div class="d-flex justify-content-between choose2 m-5 p-5">
+                    <div class="choose3">
+                        <h1>Why Choose Us</h1>
+                        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam <br>
+                            vulputate velit imperdiet dolor tempor tristique.</p><br>
+                        <div class="choose4 d-flex justify-content-between">
+                            <div class="choose5">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <h6>Fast & Free Shipping</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p><br>
+                            </div>
+                            <div class="choose6">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <h6>Easy to Shop</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p><br>
+                            </div>
+                        </div>
+                        <div class="choose7 d-flex justify-content-between">
+                            <div class="choose8">
+                                <i class="fa-solid fa-life-ring"></i>
+                                <h6>24/7 Support</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p>
+                            </div>
+                            <div class="choose9">
+                                <i class="fa-solid fa-right-left"></i>
+                                <h6>Hassle Free Returns</h6>
+                                <p>Donec vitae odio quis nisl dapibus <br>
+                                    malesuada. Nullam ac aliquet velit. <br>
+                                    Aliquam vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose10 border" style="height: 500px; width: 450px;">
+                        <img src="images/why-choose-us-img.jpg" alt="image" style="height: 500px; width: 450px;">
+                    </div>
+                </div>
+            </div>
+            <div class="team1">
+                <div class="team2 bg-white">
+                    <div class="team3 d-flex justify-content-between ms-5 me-5 p-5">
+                        <div class="team4">
+                            <img src="images/person_1.jpg" alt="image" style="height: 270px; width: 270px;">
+                            <h3><a href="#goToTop">Lawson Arnold</a></h3>
+                            <p>CEO, Founder, Atty.</p>
+                            <p>Separated they live in. Separated they <br>
+                                live in Bookmarksgrove right at the <br>
+                                coast of the Semantics, a large <br>
+                                language ocean.</p>
+                            <a href="#goToTop">Read More</a>
+                        </div>
+                        <div class="team5">
+                            <img src="images/person_2.jpg" alt="image" style="height: 270px; width: 270px;">
+                            <h3><a href="#goToTop">Jeremy Walker</a></h3>
+                            <p>CEO, Founder, Atty.</p>
+                            <p>Separated they live in. Separated they <br>
+                                live in Bookmarksgrove right at the <br>
+                                coast of the Semantics, a large <br>
+                                language ocean.</p>
+                            <a href="#goToTop">Read More</a>
+                        </div>
+                        <div class="team6">
+                            <img src="images/person_3.jpg" alt="image" style="height: 270px; width: 270px;">
+                            <h3><a href="#goToTop">Patrik White</a></h3>
+                            <p>CEO, Founder, Atty.</p>
+                            <p>Separated they live in. Separated they <br>
+                                live in Bookmarksgrove right at the <br>
+                                coast of the Semantics, a large <br>
+                                language ocean.</p>
+                            <a href="#goToTop">Read More</a>
+                        </div>
+                        <div class="team7">
+                            <img src="images/person_4.jpg" alt="image" style="height: 270px; width: 270px;">
+                            <h3><a href="#goToTop">Kathryn Ryan</a></h3>
+                            <p>CEO, Founder, Atty.</p>
+                            <p>Separated they live in. Separated they <br>
+                                live in Bookmarksgrove right at the <br>
+                                coast of the Semantics, a large <br>
+                                language ocean.</p>
+                            <a href="#goToTop">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <--Testimonials-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner bg-success" style="height: 500px;">
+                    <div class="carousel-item active" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+            <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+                <hr><br>
+                <div class=" footer1 d-flex justify-content-between">
+                    <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                        Distributed By ThemeWagon</p>
+                    <ul class="d-flex justify-content-between">
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
-            <h2>Content for Tab 5</h2>
-            <p>This is the content for Tab 5.</p>
+            <!-- <h2>Content for Tab 5</h2>
+            <p>This is the content for Tab 5.</p> -->
+            <div class="about1 bg-success" style="height: 450px;">
+                <div class="about2 ml-5 p-5 me-0 pe-0">
+                    <div class="about3 d-flex justify-content-between"> 
+                        <div class="about4">
+                            <h1>Services</h1><br>
+                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet <br> 
+                                velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p><br>
+                            <div class="about5 d-flex justify-content-between" style="width: 200px;">
+                                <button type="button" class="btn btn-warning text-black">Shop Now</button>
+                                <button type="button" class="btn btn-outline-secondary">Explore</button>
+                            </div>
+                        </div>
+                        <img src="images/couch.png" alt="image" style="width: 700px;">
+                    </div>
+                </div>
+            </div>
+            <div class="shipping1">
+                <div class="shipping2 ms-5 me-5 p-5 mt-5 mb-5">
+                    <div class="shipping3 d-flex justify-content-between">
+                        <div class="shipping4">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h6>Fast & Free Shipping</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p><br><br>
+                        </div>
+                        <div class="shipping5">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <h6>Easy to Shop</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p><br><br>
+                        </div>
+                        <div class="shipping6">
+                            <i class="fa-solid fa-life-ring"></i>
+                            <h6>24/7 Support</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p><br><br>
+                        </div>
+                        <div class="shipping7">
+                            <i class="fa-solid fa-right-left"></i>
+                            <h6>Hassle Free Returns</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p><br><br>
+                        </div>
+                    </div>
+                    <div class="shipping3 d-flex justify-content-between">
+                        <div class="shipping4">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h6>Fast & Free Shipping</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p>
+                        </div>
+                        <div class="shipping5">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <h6>Easy to Shop</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p>
+                        </div>
+                        <div class="shipping6">
+                            <i class="fa-solid fa-life-ring"></i>
+                            <h6>24/7 Support</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p>
+                        </div>
+                        <div class="shipping7">
+                            <i class="fa-solid fa-right-left"></i>
+                            <h6>Hassle Free Returns</h6>
+                            <p>Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. <br>
+                                Aliquam vulputate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tb5 bg-white">
+                <div class="d-flex justify-content-between tb7 m-5 p-5">
+                    <div class="tb6 border" style="width: 300px;">
+                        <h1>Crafted with <br> excellent <br> material.</h1>
+                        <p>Donec vitae odio quis nisl dapibus <br>
+                            malesuada. Nullam ac aliquet velit. <br>
+                            Aliquam vulputate velit imperdiet dolor <br>
+                            tempor tristique.</p>
+                        <button type="button" class="btn btn-dark"><a href="#goToTop" class="text-white">Explore</a></button>
+                    </div>
+                    <div class="tb7 border text-center" style="width: 260px;">
+                        <img src="images/product-1 (1).png" alt="image" style="height: 250px;width: 250px;">
+                        <p>Nordic Chair</p>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="tb8 border text-center" style="width: 260px;">
+                        <img src="images/product-2 (1).png" alt="image" style="height: 250px;width: 250px;">
+                        <p>Kruzo Aero Chair</p>
+                        <p>$78.00</p>
+                    </div>
+                    <div class="tb9 border text-center" style="width: 260px;">
+                        <img src="images/product-3.png" alt="image" style="height: 250px;width: 250px;">
+                        <p>Ergonomic Chair</p>
+                        <p>$43.00</p>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner bg-success" style="height: 500px;">
+                    <div class="carousel-item active" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+            <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+                <hr><br>
+                <div class=" footer1 d-flex justify-content-between">
+                    <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                        Distributed By ThemeWagon</p>
+                    <ul class="d-flex justify-content-between">
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab6-tab">
-            <h2>Content for Tab 6</h2>
-            <p>This is the content for Tab 6.</p>
+            <!-- <h2>Content for Tab 6</h2>
+            <p>This is the content for Tab 6.</p> -->
+            <div class="about1 bg-success" style="height: 450px;">
+                <div class="about2 ml-5 p-5 me-0 pe-0">
+                    <div class="about3 d-flex justify-content-between"> 
+                        <div class="about4">
+                            <h1>Blog</h1><br>
+                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet <br> 
+                                velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p><br>
+                            <div class="about5 d-flex justify-content-between" style="width: 200px;">
+                                <button type="button" class="btn btn-warning text-black">Shop Now</button>
+                                <button type="button" class="btn btn-outline-secondary">Explore</button>
+                            </div>
+                        </div>
+                        <img src="images/couch.png" alt="image" style="width: 700px;">
+                    </div>
+                </div>
+            </div>
+            <div class="recentBlog bg-white">
+                <div class="recentBlog6 m-5 p-5">
+                    <div class="recentBlog1 d-flex justify-content-between">
+                        <!-- <h2>Recent Blog</h2><br><br><br>
+                        <a href="#goToTop">View All Posts</a> -->
+                    </div>
+                    <div class="recentBlog2 d-flex justify-content-between">
+                        <div class="recentBlog3">
+                            <img src="images/post-1.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>First Time Home Owner Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 19, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog4">
+                            <img src="images/post-2.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>How To Keep Your Furniture Clean</h6>
+                            <p>by <strong>Robert Fox</strong> on <strong>Dec 15, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog5">
+                            <img src="images/post-3.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>Small Space Furniture Apartment Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 12, 2021</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recentBlog bg-white">
+                <div class="recentBlog6 m-5 p-5">
+                    <div class="recentBlog1 d-flex justify-content-between">
+                        <!-- <h2>Recent Blog</h2><br><br><br>
+                        <a href="#goToTop">View All Posts</a> -->
+                    </div>
+                    <div class="recentBlog2 d-flex justify-content-between">
+                        <div class="recentBlog3">
+                            <img src="images/post-1.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>First Time Home Owner Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 19, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog4">
+                            <img src="images/post-2.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>How To Keep Your Furniture Clean</h6>
+                            <p>by <strong>Robert Fox</strong> on <strong>Dec 15, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog5">
+                            <img src="images/post-3.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>Small Space Furniture Apartment Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 12, 2021</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recentBlog bg-white">
+                <div class="recentBlog6 m-5 p-5">
+                    <div class="recentBlog1 d-flex justify-content-between">
+                        <!-- <h2>Recent Blog</h2><br><br><br>
+                        <a href="#goToTop">View All Posts</a> -->
+                    </div>
+                    <div class="recentBlog2 d-flex justify-content-between">
+                        <div class="recentBlog3">
+                            <img src="images/post-1.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>First Time Home Owner Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 19, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog4">
+                            <img src="images/post-2.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>How To Keep Your Furniture Clean</h6>
+                            <p>by <strong>Robert Fox</strong> on <strong>Dec 15, 2021</strong></p>
+                        </div>
+                        <div class="recentBlog5">
+                            <img src="images/post-3.jpg" alt="image" style="height: 250px; width: 370px;">
+                            <h6>Small Space Furniture Apartment Ideas</h6>
+                            <p>by <strong>Kristin Watson</strong> on <strong>Dec 12, 2021</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner bg-success" style="height: 500px;">
+                    <div class="carousel-item active" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Testimonials</h1><br><br>
+                            <p class="text-center">“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus <br>
+                                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor <br>
+                                tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames <br>
+                                ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”</p><br><br>
+                            <img src="images/person-1.png" alt="image" style="height: 100px; width: 100px;"><br><br>
+                            <h6>Maria Jones</h6>
+                            <p>CEO, Co-Founder, XYZ Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+            <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+                <hr><br>
+                <div class=" footer1 d-flex justify-content-between">
+                    <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                        Distributed By ThemeWagon</p>
+                    <ul class="d-flex justify-content-between">
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab7" role="tabpanel" aria-labelledby="tab7-tab">
-            <h2>Content for Tab 7</h2>
-            <p>This is the content for Tab 7.</p>
+            <!-- <h2>Content for Tab 7</h2>
+            <p>This is the content for Tab 7.</p> -->
+            <div class="about1 bg-success" style="height: 450px;">
+                <div class="about2 ml-5 p-5 me-0 pe-0">
+                    <div class="about3 d-flex justify-content-between"> 
+                        <div class="about4">
+                            <h1>Contact</h1><br>
+                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet <br> 
+                                velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p><br>
+                            <div class="about5 d-flex justify-content-between" style="width: 200px;">
+                                <button type="button" class="btn btn-warning text-black">Shop Now</button>
+                                <button type="button" class="btn btn-outline-secondary">Explore</button>
+                            </div>
+                        </div>
+                        <img src="images/couch.png" alt="image" style="width: 700px;">
+                    </div>
+                </div>
+            </div>
+            <div class="contact1">
+                <div class="contact2">
+                    <div class="contact3 d-flex justify-content-between ms-5 me-5 mt-5 ml-5 p-5">
+                        <div class="contact10" style="width: 500px;"></div>
+                        <div class="contact4" style="width: 350px;">
+                            <div class="contact5 d-flex" style="width: 250px;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>43 Raymouth Rd. <br> Baltemoer, London <br> 3910</p>
+                            </div>
+                        </div>
+                        <div class="contact6">
+                            <div class="contact7 d-flex" style="width: 200px;">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>info@yourdomain.com</p>
+                            </div>
+                        </div>
+                        <div class="contact8" >
+                            <div class="contact9 d-flex" style="width: 250px;">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>info@yourdomain.com</p>
+                            </div>
+                        </div>
+                        <div class="contact10" style="width: 500px;"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="contact1">
+                <div class="contact2">
+                    <div class="contact3 d-flex justify-content-between ms-5 me-5 mt-5 ml-5 p-5">
+                        <div class="contact10" style="width: 400px;"></div>
+                        <div class="contact4" style="width: 800px;">
+                            <form>
+                                <div class="contact10" style="width: 500px;"></div>
+                                <div class="forms1 d-flex justify-content-between" style="width: 650px;">
+                                    <div class="mb-3">
+                                        <label for="exampleInputName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="exampleInputName" style="width: 300px;">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputLName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="exampleInputLName" style="width: 300px;">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 650px;">
+                                  
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputMessage" class="form-label">Message</label>
+                                  <input type="text" class="form-control" id="exampleInputMessage" style="width: 650px; height: 150px;">
+                                </div>
+                                <div class="contact10" style="width: 500px;"></div>
+                                <button type="button" class="btn btn-dark">Send Message</button>
+                                <div class="contact10" style="width: 300px;"></div>
+                              </form>
+                        </div>
+                        <div class="contact10" style="width: 500px;"></div>
+                    </div>
+                </div>
+            </div>
+           
+         
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+            <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+                <hr><br>
+                <div class=" footer1 d-flex justify-content-between">
+                    <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                        Distributed By ThemeWagon</p>
+                    <ul class="d-flex justify-content-between">
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                        <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab8" role="tabpanel" aria-labelledby="tab8-tab">
             <h2>Content for Tab 8</h2>
             <p>This is the content for Tab 8.</p>
         </div>
         <div class="tab-pane fade" id="tab9" role="tabpanel" aria-labelledby="tab9-tab">
-            <h2>Content for Tab 9</h2>
-            <p>This is the content for Tab 9.</p>
+            <!-- <h2>Content for Tab 9</h2>
+            <p>This is the content for Tab 9.</p> -->
+            <div class="top1 bg-success" style="height: 300px;">
+                <div class="container">
+                    <div class="top text-white"><br><br><br><h1>Cart</h1></div>
+                </div>
+            </div>
+            <table class="table table-hover ms-5 me-5 ps-5 pe-5 mt-5 mb-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/product-1.png" alt="image" style="height: 100px; width: 100px;"></th>
+                        <td>Product 1</td>
+                        <td>$49.00</td>
+                        <td>
+                            <div class="row">
+                                <div class="col-2">
+                                    <button class="btn btn-danger btn-block" onclick="decrementCounter()">-</button>
+                                </div>
+                                <div class="col-2">
+                                    <span class="counter" id="count">0</span>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-success btn-block" onclick="incrementCounter()">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$49.00</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/product-2.png" alt="image" style="height: 100px; width: 100px;"></th>
+                        <td>Product 2</td>
+                        <td>$49.00</td>
+                        <td>
+                            <div class="row">
+                                <div class="col-2">
+                                    <button class="btn btn-danger btn-block" onclick="decrementCounter()">-</button>
+                                </div>
+                                <div class="col-2">
+                                    <span class="counter" id="count">0</span>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-success btn-block" onclick="incrementCounter()">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$49.00</td>
+                        <td>x</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart1 bg-primary-subtle" style="height: 400px;">
+                <div class="d-flex justify-content-between cart2 ms-5 p-5 me-0">
+                    <div class="cart3" style="width: 500px;">
+                        <div class="d-flex justify-content-between cart4 mb-4" >
+                            <button type="button" class="btn btn-dark" style="width: 150px; height: 50px;">Update Cart</button>
+                            <button type="button" class="btn btn-dark" style="width: 200px; height: 50px;">Continue Shopping</button>
+                        </div>
+                        <h2>Coupon</h2>
+                        <p>Enter your coupon code if you have one.</p>
+                        <div class="d-flex justify-content-between cart5">
+                            <input type="text" placeholder="Coupon Code" style="width: 300px; height: 50px;">
+                            <button type="button" class="btn btn-dark" style="width: 150px; height: 80px;">Apply <br> Coupon</button>
+                        </div>
+                    </div>
+                    <div class="cart6 me-5">
+                        <h2>CART TOTALS</h2>
+                        <hr>
+                        <div class="d-flex justify-content-between cart7">
+                            <div class="cart8">
+                                <p>Subtotal</p>
+                                <p>Total</p>
+                            </div>
+                            <div class="cart9">
+                                <p><strong>$230.00</strong></p>
+                                <p><strong>$230.00</strong></p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-dark" style="width: 300px; height: 70px;">Proceed To Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
+                <div class="d-flex justify-content-between m-5 p-5">
+                    <p></p>
+                    <img src="images/sofa.png" alt="image">
+                </div>
+                
+            </div>
+            <div class="newsletter1 m-5 p-5">
+                <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
+                <div class="d-flex justify-content-between newsletter2">
+                    <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
+                        <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
+                        <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
+                        <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section1 ms-5 me-5 ps-5 pe-5">
+                <h1>Furni.</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="section4">
+                        <p>Donec facilisis quam ut purus rutrum lobortis. <br>
+                            Donec vitae odio quis nisl dapibus malesuada. <br>
+                            Nullam ac aliquet velit. Aliquam vulputate velit <br>
+                            imperdiet dolor tempor tristique. Pellentesque <br>
+                            habitant</p>
+                        <div class="d-dlex justify-content-between pb-2 section5">
+                            <i class="fa-brands fa-facebook pe-2"></i>
+                            <i class="fa-brands fa-twitter pe-2"></i>
+                            <i class="fa-brands fa-instagram pe-2"></i>
+                            <i class="fa-brands fa-linkedin pe-2"></i>
+                        </div>
+                    </div>
+                    <div class="section6">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">About us</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Services</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Blog</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="section7">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Support</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Knowledge base</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Live chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="section8">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Jobs</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Our team</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Leadership</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="section9">
+                        <ul>
+                            <li class="list-group-item border-0"><a href="#goToTop">Nordic Chair</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Kruzo Aero</a></li>
+                            <li class="list-group-item border-0"><a href="#goToTop">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div>
+            <hr class="ms-5 me-5 mt-5 ps-5 pe-5">
+    <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
+        <hr><br>
+        <div class=" footer1 d-flex justify-content-between">
+            <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
+                Distributed By ThemeWagon</p>
+            <ul class="d-flex justify-content-between">
+                <li class="list-group-item ps-4 border-0"><a href="#goToTop">Terms & Conditions</a></li>
+                <li class="list-group-item ps-4 border-0"><a href="#goToTop">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
         </div>
     </div>
     <!-- <nav class="navbar bg-success" style="height: 70px;">
@@ -233,200 +1980,35 @@
                 </div>
         </div>
     </nav> -->
-    <!-- <div class="top1 bg-success" style="height: 300px;">
-        <div class="container">
-            <div class="top text-white"><br><br><br><h1>Cart</h1></div>
-        </div>
-    </div> -->
-    <!-- <div class="products bg-primary-subtle">
-        <div class="product2-1 bg-primary-subtle m-5 p-5 mt-0 mb-0" style="height: 130px;">
-            <div class="d-flex justify-content-between product2-2">
-                <div class="product2-3">
-                    <p><strong>Image</strong></p>
-                </div>
-                <div class="product2-4">
-                    <p><strong>Product</strong></p>
-                </div>
-                <div class="product2-5">
-                    <p><strong>Price</strong></p>
-                </div>
-                <div class="product2-6">
-                    <p><strong>Quantity</strong></p>
-                </div>
-                <div class="product2-7">
-                    <p><strong>Total</strong></p>
-                </div>
-                <div class="product2-8">
-                    <p><strong>Remove</strong></p>
-                </div>
-            </div>
-            <hr>
-        </div>
-    </div> -->
-    <!-- <div class="products bg-primary-subtle">
-        <div class="product1-1 bg-primary-subtle m-5 p-5 mt-0 mb-0" style="height: 200px;">
-            <div class="d-flex justify-content-between product1-2">
-                <div class="product1-3">
-                    <img src="images/product-1.png" alt="image" style="height: 100px; width: 100px;">
-                </div>
-                <div class="product1-4">
-                    <h2>Product 1</h2>
-                </div>
-                <div class="product1-5">
-                    <p>$49.00</p>
-                </div>
-                <div class="product1-6">
-                    <input type="text" placeholder="1">
-                </div>
-                <div class="product1-7">
-                    <p>$49.00</p>
-                </div>
-                <div class="product1-8">
-                    <p>x</p>
-                </div>
-            </div>
-            <hr>
-        </div>
-    </div> -->
-    <!-- <div class="products bg-primary-subtle">
-        <div class="product2-1 bg-primary-subtle m-5 p-5 mt-0 mb-0" style="height: 200px;">
-            <div class="d-flex justify-content-between product2-2">
-                <div class="product2-3">
-                    <img src="images/product-2.png" alt="image" style="height: 100px; width: 100px;">
-                </div>
-                <div class="product2-4">
-                    <h2>Product 2</h2>
-                </div>
-                <div class="product2-5">
-                    <p>$49.00</p>
-                </div>
-                <div class="product2-6">
-                    <input type="text" placeholder="1">
-                </div>
-                <div class="product2-7">
-                    <p>$49.00</p>
-                </div>
-                <div class="product2-8">
-                    <p>x</p>
-                </div>
-            </div>
-            <hr>
-        </div>
-    </div> -->
-    <!-- <div class="cart1 bg-primary-subtle" style="height: 400px;">
-        <div class="d-flex justify-content-between cart2 m-5 p-5 mt-0 mb-0">
-            <div class="cart3" style="width: 500px;">
-                <div class="d-flex justify-content-between cart4 mb-4" >
-                    <button type="button" class="btn btn-dark" style="width: 150px; height: 50px;">Update Cart</button>
-                    <button type="button" class="btn btn-dark" style="width: 200px; height: 50px;">Continue Shopping</button>
-                </div>
-                <h2>Coupon</h2>
-                <p>Enter your coupon code if you have one.</p>
-                <div class="d-flex justify-content-between cart5">
-                    <input type="text" placeholder="Coupon Code" style="width: 300px; height: 50px;">
-                    <button type="button" class="btn btn-dark" style="width: 150px; height: 80px;">Apply <br> Coupon</button>
-                </div>
-            </div>
-            <div class="cart6 me-5">
-                <h2>CART TOTALS</h2>
-                <hr>
-                <div class="d-flex justify-content-between cart7">
-                    <div class="cart8">
-                        <p>Subtotal</p>
-                        <p>Total</p>
-                    </div>
-                    <div class="cart9">
-                        <p><strong>$230.00</strong></p>
-                        <p><strong>$230.00</strong></p>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-dark" style="width: 300px; height: 70px;">Proceed To Checkout</button>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="sofa1 bg-primary-subtle border" style="height: 300px;">
-        <div class="d-flex justify-content-between m-5 p-5">
-            <p></p>
-            <img src="images/sofa.png" alt="image">
-        </div>
-        
-    </div> -->
-    <!-- <div class="newsletter1 m-5 p-5">
-        <i class="fa-solid fa-envelope mb-3">Subscribe to Newsletter</i>
-        <div class="d-flex justify-content-between newsletter2">
-            <div class="d-flex justify-content-between newsletter4" style="width: 650px;">
-                <input type="text" placeholder="Enter your name" style="width: 280px; height: 50px;">
-                <input type="email" placeholder="Enter your email" style="width: 280px; height: 50px;">
-                <i class="fa-solid fa-paper-plane border bg-success p-3" style="width: 50px; height: 50px;"></i>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="section1 ms-5 me-5 ps-5 pe-5">
-        <h1>Furni.</h1>
-        <div class="d-flex justify-content-between">
-            <div class="section4">
-                <p>Donec facilisis quam ut purus rutrum lobortis. <br>
-                    Donec vitae odio quis nisl dapibus malesuada. <br>
-                    Nullam ac aliquet velit. Aliquam vulputate velit <br>
-                    imperdiet dolor tempor tristique. Pellentesque <br>
-                    habitant</p>
-                <div class="d-dlex justify-content-between pb-2 section5">
-                    <i class="fa-brands fa-facebook pe-2"></i>
-                    <i class="fa-brands fa-twitter pe-2"></i>
-                    <i class="fa-brands fa-instagram pe-2"></i>
-                    <i class="fa-brands fa-linkedin pe-2"></i>
-                </div>
-            </div>
-            <div class="section6">
-                <ul>
-                    <li class="list-group-item"><a href="#goToTop">About us</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Services</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Blog</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="section7">
-                <ul>
-                    <li class="list-group-item"><a href="#goToTop">Support</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Knowledge base</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Live chat</a></li>
-                </ul>
-            </div>
-            <div class="section8">
-                <ul>
-                    <li class="list-group-item"><a href="#goToTop">Jobs</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Our team</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Leadership</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="section9">
-                <ul>
-                    <li class="list-group-item"><a href="#goToTop">Nordic Chair</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Kruzo Aero</a></li>
-                    <li class="list-group-item"><a href="#goToTop">Ergonomic Chair</a></li>
-                </ul>
-            </div>
+   
+  
+  
 
-        </div>
-    </div> -->
-    <!-- <hr class="ms-5 me-5 mt-5 ps-5 pe-5"> -->
-    <!-- <div class="footer ms-5 me-5 ps-5 pe-5 mt-5" style="height: 190px;">
-        <hr><br>
-        <div class=" footer1 d-flex justify-content-between">
-            <p>Copyright ©2023. All Rights Reserved. — Designed with love by <a href="#goToTop">Untree.co</a> <br>
-                Distributed By ThemeWagon</p>
-            <ul class="d-flex justify-content-between">
-                <li class="list-group-item ps-4"><a href="#goToTop">Terms & Conditions</a></li>
-                <li class="list-group-item ps-4"><a href="#goToTop">Privacy Policy</a></li>
-            </ul>
-        </div>
-    </div> -->
+    
+    
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
     crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        let count = 0;
+        
+        function incrementCounter() {
+            count++;
+            document.getElementById("count").textContent = count;
+        }
+
+        function decrementCounter() {
+            if (count > 0) {
+                count--;
+                document.getElementById("count").textContent = count;
+            }
+        }
+    </script>
 </body>
 </html>
